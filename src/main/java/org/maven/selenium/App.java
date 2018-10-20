@@ -34,7 +34,7 @@ import org.testng.annotations.Test;
 public class App {
 	@Test
 	public static void main(String[] args) throws InterruptedException {
-		System.setProperty("webdriver.chrome.driver", "/usr/lib/chromium-browser/chromium-browser");
+		System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
 		ChromeOptions chromeOptions = new ChromeOptions();
 		WebDriver driver = new ChromeDriver(chromeOptions);
 		System.out.println("Hi, Welcome to Edureka's YouTube Live session on Selenium WebDriver");
