@@ -42,6 +42,7 @@ public class App {
 		chromeOptions.addArguments("--disable-gpu"); // applicable to windows os only
 		chromeOptions.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems
 		chromeOptions.addArguments("--no-sandbox"); // Bypass OS security model
+		chromeOptions.addArguments("-headless");
 		WebDriver driver = new ChromeDriver(chromeOptions);
 		System.out.println("Hi, Welcome to Edureka's YouTube Live session on Selenium WebDriver");
 		driver.get("http://localhost:3001/");
