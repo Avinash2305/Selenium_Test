@@ -39,7 +39,7 @@ public class App {
 		WebDriver driver = new ChromeDriver(chromeOptions);
 		System.out.println("Hi, Welcome to Edureka's YouTube Live session on Selenium WebDriver");
 		driver.get("http://localhost:3001/");
-		driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);	
+		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);	
 		driver.findElement(By.name("login")).sendKeys("devops");
 		driver.findElement(By.name("password")).sendKeys("test");
 		driver.findElement(By.name("click")).click();		
